@@ -1,0 +1,33 @@
+.nav-header .brand-title {
+    margin-left: 15px;
+    width: auto;
+    max-width: 100%;
+}
+.hamburger .line{
+    background: #F8C12C!important;
+}
+.header-content{
+    padding-left: 1.875rem!important;
+}
+.quixnav{
+    background-color: #0047D4!important;
+    top: 0px!important;
+    z-index: 22!important;
+    height: 100vh!important;
+    position: fixed!important;
+}
+[data-sidebar-position="fixed"][data-layout="vertical"] .nav-header {
+    z-index: 30!important;
+}
+.box-profil-dash{
+    margin-top: -40px; text-align: center;
+}
+.box-profil-dash img{
+    height: 100px;
+}
+.show.menu-toggle .box-profil-dash img{
+    height: 50px!important;
+}
+.show.menu-toggle .box-profil-dash{
+    margin-top: -25px!important;
+}
