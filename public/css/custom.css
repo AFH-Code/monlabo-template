@@ -27,7 +27,104 @@
 }
 .show.menu-toggle .box-profil-dash img{
     height: 50px!important;
+    margin-bottom: 15px;
 }
 .show.menu-toggle .box-profil-dash{
     margin-top: -25px!important;
+}
+.link-item-dash{
+    color: #FFF;
+    font-family: HurmeGeometricSans1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; text-transform: unset;
+    border-right: 8px solid transparent;
+    background: transparent!important;
+}
+.link-item-dash:hover{
+    background: #4075DF!important;  border-right: 8px solid #000!important;
+}
+.link-item-dash.activeItem{
+    background: #4075DF!important;
+    border-right: 8px solid #000!important;
+}
+.pull-right{
+    float: right!important;
+}
+.show.menu-toggle .quixnav .login-username, .show.menu-toggle .quixnav .login-userrole{
+    display: none!important;
+}
+
+.login-username{
+    color: #FFF;
+    text-align: center;
+    /* User-name */
+    font-family: HurmeGeometricSans1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.login-userrole{
+    color: #FFF;
+    text-align: center;
+    /* Label */
+    font-family: HurmeGeometricSans1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login-userrole div.bd-b{
+    display: inline-block; width: 200px; border-bottom: 2px solid #fff;
+}
+
+.cardd-dash{
+    box-shadow: 0px 0px 10px 0px #BAE0FF; border: 1px solid #BAE0FF;
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+}
+.cardd-dash h3{
+    font-family: HurmeGeometricSans1;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #858891;
+}
+.count-item-dash h3{
+    font-family: HurmeGeometricSans1;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+}
+.count-item-dash div.descItem{
+    font-family: HurmeGeometricSans1;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.count-item-dash div.descItem2{
+    font-family: HurmeGeometricSans1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.count-item-dash h6{
+    font-family: HurmeGeometricSans1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
 }
