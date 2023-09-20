@@ -40,7 +40,7 @@
         <!--**********************************
             Content body start
         ***********************************-->
-        <div class="content-body" style="background: #F4FBFE;">
+        <div class="content-body" style="background: #F4FBFE; min-height: 700px!important;">
             <!-- row -->
             <div class="container-fluid">
                 
@@ -73,21 +73,93 @@
                         </div>
 
 
-                        <div class="cardd-dash mt-3" style="min-height: 260px;">
+                        <div class="cardd-dash mt-3" style="min-height: 200px;">
                             <h3>Nombre de réservations par trimèstre</h3>
 
-                            <div class="row mt-5">
+                            <div class="row mt-2">
                                 <div class="col-md-8 text-center">
-                                    <canvas id="canvashist" height="160"></canvas>
+                                    <canvas id="canvashist" height="120"></canvas>
                                 </div>
-                                <div class="col-md-4 text-center">
-                                    <div class="count-item-dash">
-                                        <h3> 241 </h3>
-                                        <div class="descItem">Véhicules  <br>opérationnels</div>
-                                    </div>
+                                <div class="col-md-4 text-center pt-5">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6 col-6 text-right pt-2">
+                                                <span class="bp-legende-dash bp-legende1 mt-1"></span>
+                                            </div>
+                                            <div class="col-md-6 col-6">
+                                                <div class="form-group">
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">2022</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-6 text-right pt-2">
+                                                <span class="bp-legende-dash bp-legende3 mt-1"></span>
+                                            </div>
+                                            <div class="col-md-6 col-6">
+                                                <div class="form-group">
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">2023</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="cardd-dash mt-3 mb-3" style="min-height: 200px;">
+                            <h3>Top 3 Moniteurs</h3>
+
+                            <div class="table-responsive-vertical shadow-z-1" style="box-shadow:0px 0px 2px rgba(0,0,0,0.0005);">
+                                <table id="table" class="table table-hover table-mc-light-blue" style="margin: 0px 0px 15px 0px;">
+                               <thead>
+                               <tr>
+                                 <th>Moniteur</th>
+                                 <th>Réservations</th>
+                                 <th>Heure</th>
+                               </tr>
+                               </thead>
+                               <tbody>
+          
+                                 <tr>
+                                   <td data-title="Moniteur">Stephanie Lambda</td>
+                                   <td data-title="Réservations">45</td>
+                                   <td data-title="Heure">
+                                      580
+                                   </td>
+                                 </tr>
+          
+                                 <tr>
+                                  <td data-title="AUTEURS">Melanie Grimes</td>
+                                  <td data-title="CATEGORIES">100</td>
+                                  <td data-title="DATE">
+                                     408
+                                  </td>
+                                  
+                                </tr>
+          
+                                <tr>
+                                  <td data-title="AUTEURS">Martin Nolan</td>
+                                  <td data-title="CATEGORIES">20</td>
+                                  <td data-title="DATE">
+                                     400
+                                  </td>
+                                </tr>
+          
+                               </tbody>
+                              </table>
+                              </div>
+
+                            <div class="text-right">
+                                <a href="">Voir tous <span class="bi bi-chevron-compact-right"></span></a>
+                            </div>
+                        </div>
+
+
                     </div>
 
                     <div class="col-md-4">
@@ -181,7 +253,17 @@
                         </div>
 
                         <div class="cardd-dash mt-4" style="min-height: 200px;">
+                            <h3 style="font-size: 17px;">Apprenants</h3>
                             <canvas id="canvaspie" height="200"></canvas>
+
+                            <div class="row mt-2">
+                                <div class="col-md-7 text-right">
+                                    <span class="bp-legende-dash bp-legende4"></span> <span class="descItem2">Cours validés</span>
+                                </div>
+                                <div class="col-md-5">
+                                    <span class="bp-legende-dash bp-legende5"></span> <span class="descItem2">Cours annulés</span>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -199,8 +281,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Quixkit</a> 2019</p>
-                <p>Distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a></p> 
+                <p>Copyright © 2023 MonLabo &amp; Developed by <a href="#">Quixkit</a> 2019</p>
             </div>
         </div>
         <!--**********************************
@@ -260,15 +341,15 @@
         var datapointshist2 = [80, 85, 45, 55];
 
         var confighist = {
-            type: 'bar',
+            type: 'horizontalBar',
             data: {
                 labels: ['Trimestre 1', 'Trimestre 2', 'Trimestre 3', 'Trimestre 4'],
                 datasets: [{
                     axis: 'y',
                     label: 'Dataset 1',
-                    backgroundColor: '#52c969',
+                    backgroundColor: '#F8C12C',
                     borderColor: '#FFFFFF',
-                    borderWidth: 5,
+                    borderWidth: 0,
                     barThickness: 20,
                     fill: false,
                     data: datapointshist1
@@ -277,7 +358,7 @@
                     label: 'Dataset 2',
                     backgroundColor: '#0064d2',
                     borderColor: '#FFFFFF',
-                    borderWidth: 5,
+                    borderWidth: 0,
                     barThickness: 20,
                     fill: false,
                     data: datapointshist2
@@ -299,16 +380,17 @@
             }
         };
 
-        var datapointspie = [55,45]
+        var datapointspie = [18,82]
         var configpie = {
             type: 'doughnut',
             data: {
                 datasets: [{
                     data: datapointspie,
-            borderWidth: 5,
+                    borderWidth: 1,
+                    borderColor: ['#DC3545','#1AB846'],
                     backgroundColor: [
-                        "#0064D2",
-                        "#D4D8DE"
+                        "#FFD8D8",
+                        "#E7FFED"
                     ],
                     label: 'Dataset 1'
                 }],
@@ -320,7 +402,7 @@
             },
             options: {
                 responsive: true,
-                cutoutPercentage: 80,
+                cutoutPercentage: 50,
                 legend: {
                     display: false,
                     labels: {
@@ -330,45 +412,6 @@
             }
         };
 
-       
-
-        const labels = ['Jan', 'Fev', 'Mar', 'avr', 'Mai', 'Jun', 'Jul'];
-        const data = {
-        labels: labels,
-        datasets: [{
-            axis: 'y',
-            label: 'My First Dataset',
-            data: [65, 59, 80, 81, 56, 55, 40],
-            fill: false,
-            backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(255, 159, 64, 0.2)',
-            'rgba(255, 205, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(201, 203, 207, 0.2)'
-            ],
-            borderColor: [
-            'rgb(255, 99, 132)',
-            'rgb(255, 159, 64)',
-            'rgb(255, 205, 86)',
-            'rgb(75, 192, 192)',
-            'rgb(54, 162, 235)',
-            'rgb(153, 102, 255)',
-            'rgb(201, 203, 207)'
-            ],
-            borderWidth: 1
-        }]
-        };
-
-        const config = {
-            type: 'bar',
-            data,
-            options: {
-                indexAxis: 'y',
-            }
-        };
 
         window.onload = function() {
 
@@ -379,8 +422,6 @@
             var ctxpie = document.getElementById('canvaspie').getContext('2d');
             window.myPie = new Chart(ctxpie, configpie);
         };
-
-
 
     </script>
 
