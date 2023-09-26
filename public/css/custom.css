@@ -942,3 +942,74 @@
     }
   }
   /* End   Header */
+
+
+  .nav__Tabs ul {
+    background: #FFF;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  
+  .nav__Tabs li {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    padding: 5px 16px;
+  }
+  
+  .nav__Tabs li a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.5;
+    padding: 1em 0;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    color: #9EACB8;
+    line-height: 1;
+    transition: all 0.3s, transform 0.3s;
+  }
+  .nav__Tabs li a:hover {
+    opacity: 1;
+  }
+  
+  .nav__Tabs li.current a {
+    opacity: 1;
+    color: #0047D4;
+    font-family: HurmeGeometricSans1;
+  }
+  
+  /* The line */
+  .nav__Tabs li:last-child::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 4px;
+    background: #0047D4;
+    content: "";
+    transition: transform 0.3s;
+  }
+  
+  /* Move the line */
+  .nav__Tabs li:first-child.current ~ li:last-child::before {
+    transform: translate3d(-112.5%, 0, 0);
+  }
+  
+  .nav__Tabs li:last-child.current::before {
+    transform: translate3d(12.5%, 0, 0);
+  }
