@@ -7,22 +7,96 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Mon labo</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../public/images/favicon.png">
-    <link rel="stylesheet" href="../public/vendor/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../public/vendor/owl-carousel/css/owl.theme.default.min.css">
-    <link href="../public/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
-    <link href="../public/css/style.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/Monlabo/public/images/logo-icon.png">
+    <link rel="stylesheet" href="/Monlabo/public/vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Monlabo/public/vendor/owl-carousel/css/owl.theme.default.min.css">
+    <link href="/Monlabo/public/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="/Monlabo/public/css/style.css" rel="stylesheet">
+    <link href="/Monlabo/public/css/custom.css" rel="stylesheet">
+    <link href="/Monlabo/public/css/fontsaps.css" rel="stylesheet">
+    <link href="/Monlabo/public/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="/Monlabo/public/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="/Monlabo/public/js/6044546ef2.js"></script>
 </head>
 
-<body>
+<body style="margin: 0px;">
+
+    <header class="header-menu">
+        <div class="container nav2">
+          <h1 class="logo">
+            <img src="/Monlabo/public/images/logo-SAAS.png" alt="" style="height: 35px;"/>
+          </h1>
+          <button onclick="menu()" class="menu_open"><i class="fas fa-ellipsis-v"></i></button>
+  
+          <div class="m_menu">
+            <button onclick="menu()" class="menu_close">&times;</button>
+            <ul class="normal">
+              <li class="menu_o">
+                <a style="font-family: Quicksand-Regular;
+                font-size: 14px;
+                font-weight: 700;
+                color: #333;
+                padding: 5px 10px;
+                "><img src="/Monlabo/public/images/Icons-OJ.png" alt="" style="height: 20px;"> FR <span class="bi bi-chevron-down"></span></a>
+                <ul class="down-menu" style="padding: 0px;">
+                  <li><a href="">Français</a></li>
+                  <li><a href="">Anglais</a></li>
+                </ul>
+              </li>
+              <li><a href="" class="active" style="padding: 5px 10px;">Ressources</a></li>
+              <li><a href="" class="active" style="padding: 5px 10px;">Contact</a></li>
+            </ul>
+            <ul class="user">
+              <li><a class="button signin" href="">Connexion</a></li>
+              <li><a class="button signup" href="">Inscription</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+
     <div class="container">
+
+        <div style="
+        height: 696px;
+        border-radius: 20px;
+        background: linear-gradient(179.71deg, #C8E2F8 0.22%, #EDF3F9 99.72%);
+        padding: 100px 50px;
+        ">
+            <div class="row">
+                <div class="col-md-7">
+                  <h3 style="font-family: HurmeGeometricSans1;
+                  font-size: 40px;
+                  font-weight: 700;
+                  line-height: 50px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                  ">
+                    Simplifier l’expérience de la réservation
+                  </h3>
+                </div>
+
+                <div class="col-md-5">
+                    <img src="/Monlabo/public/images/amico.png" alt="">
+                </div>
+            </div>
+        </div>
         <a href="/Monlabo/gerant/index.html">Gérant</a>
     </div>
     <!--**********************************
         Scripts
     ***********************************-->
-    <!-- Required vendors -->
-    <script src="./public/vendor/global/global.min.js"></script>
+
+    <script>
+        function menu()
+        {
+            var the_menu = document.getElementsByClassName("m_menu")[0];
+            the_menu.classList.toggle('open');
+        }
+    </script>
+    
     <script src="./public/js/quixnav-init.js"></script>
     <script src="./public/js/custom.min.js"></script>
 
