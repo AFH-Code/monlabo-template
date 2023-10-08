@@ -1316,11 +1316,11 @@ ul.list-login-bottom li:nth-child(1):hover a,ul.list-login-bottom li:nth-child(2
 }
 
 input:checked+.slider-w3ls {
-  background-color: #a3b955;
+  background-color: #F8C12C;
 }
 
 input:focus+.slider-w3ls {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #F8C12C;
 }
 
 input:checked+.slider-w3ls:before {
@@ -1437,5 +1437,63 @@ ul.list-login-bottom li:nth-child(1) a, ul.list-login-bottom li:nth-child(2) a {
 }
 
 input:checked+.slider-w3ls {
-  background-color: #1b4889;
+  background-color: #F8C12C;
+}
+.card-options{
+  min-height: 252px;
+  padding: 43px 19px 25px 19px;
+  border: 1px solid #E6E8EF;
+  background: #fff;
+  padding: 35px;
+  margin-bottom: 7px;
+}
+
+.sub-title-card{
+  font-family: HurmeGeometricSans1;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+}
+.sub-content-card{
+  font-family: HurmeGeometricSans1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.box-content-tabs{
+  padding: 20px 50px;
+}
+
+.box-content-tabs .col-img img{
+  height: 30px; margin-right: 7px;
+}
+.box-content-tabs .col-content h3{
+  font-family: HurmeGeometricSans1;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+}
+.box-content-tabs .col-content div{
+  font-family: HurmeGeometricSans1;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+}
+.title-useful-link{
+  font-family: HurmeGeometricSans1;
+  font-size: 19px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.useful-link{
+  font-family: HurmeGeometricSans1;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#FFFFFF;
+  margin-bottom: 15px;
 }
