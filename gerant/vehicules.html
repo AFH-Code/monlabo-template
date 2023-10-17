@@ -41,7 +41,20 @@
         <div class="content-body" style="background: #F4FBFE; min-height: 700px!important;">
             <!-- row -->
             <div class="container-fluid">
-                
+                <div class="row">
+                    <div class="col-lg-5 col-md-8">
+                        <div class="mb-3 shadow_box_item">
+                            <div class="row">
+                                <div class="col-md-6 text-center">
+                                    <a href="" class="active_v">Véhicules en activité</a>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <a href="">Véhicules inactifs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="input-group mb-3">
@@ -66,16 +79,16 @@
                             </a>
                             <div class="dropdown-content-prfl">
                                 <a href="javascript::void(0)" class="dropdown-item">
-                                    Nom croissant
+                                    Transmission croissant
                                 </a>
                                 <a href="javascript::void(0)" class="dropdown-item open-confirm-modal">
-                                    Nom décroissant
+                                    Transmission décroissant
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-6 text-right">
-                        <span class="stats-page-descript">Tous les moniteurs (09) <a href=""><img src="/Monlabo/public/images/icon-refresh.png"/></a></span>
+                        <span class="stats-page-descript">Tous les véhicules actifs (300) </span> | <a href="" class="stats-page-descript">Disponibles (200)</a> | <a href="" class="stats-page-descript">Indisponibles (100)</a> <span class="stats-page-descript"><a href=""><img src="/Monlabo/public/images/icon-refresh.png"/></a></span>
                     </div>
                 </div>
 
@@ -88,31 +101,28 @@
                         <div class="mb-1">
                             <div class="br-checkbox">
                                 <input id="checkbox-ind1" name="checkbox-ind1" type="checkbox" aria-label="TITRE" checked="checked" indeterminate="indeterminate" data-parent="check-01">
-                                <label for="checkbox-ind1">PRENOM</label>
+                                <label for="checkbox-ind1">Matriculation</label>
                             </div>
                         </div>
 
                         </th>
-                       <th>NOM</th>
-                       <th>TELEPHONE</th>
-                       <th>Action</th>
+                       <th>Transmission</th>
+                       <th>Détail</th>
                      </tr>
                      </thead>
                      <tbody>
 
                        <tr>
-                         <td data-title="PRENOM">
+                         <td data-title="Matriculation">
                             <div class="mb-1">
                                 <div class="br-checkbox">
-                                    <input id="checkbox-01" name="checkbox-01" type="checkbox" aria-label="Stephanie" checked="checked" data-child="check-01">
-                                    <label for="checkbox-01">Stephanie</label>
+                                    <input id="checkbox-01" name="checkbox-01" type="checkbox" aria-label="0123456" checked="checked" data-child="check-01">
+                                    <label for="checkbox-01">0123456</label>
                                 </div>
                             </div>
                          </td>
-                         <td data-title="NOM">Nobody</td>
-                         <td data-title="TELEPHONE">715-819-3988</td>
-
-                         <td data-title="Action" style="white-space: nowrap;" class="text-right">
+                         <td data-title="Transmission">Manuelle</td>
+                         <td data-title="Détail" style="white-space: nowrap;" class="text-right">
                             <a href="" class="icon-action-tr">
                                 <img src="/Monlabo/public/images/eye-open.png" alt="">
                             </a>
@@ -123,16 +133,15 @@
                        </tr>
 
                        <tr>
-                        <td data-title="PRENOM">
+                        <td data-title="Matriculation">
                             <div class="mb-1">
                                 <div class="br-checkbox">
-                                  <input id="checkbox-02" name="checkbox-02" type="checkbox" aria-label="Oran" data-child="check-01">
-                                  <label for="checkbox-02">Oran</label>
+                                  <input id="checkbox-02" name="checkbox-02" type="checkbox" aria-label="0123456" data-child="check-01">
+                                  <label for="checkbox-02">0123456</label>
                                 </div>
                             </div>
                         </td>
-                        <td data-title="NOM">Wilkinson</td>
-                        <td data-title="TELEPHONE">365-854-3064</td>
+                        <td data-title="Transmission">Manuelle</td>
                         <td data-title="Action" style="white-space: nowrap;" class="text-right">
                             <a href="" class="icon-action-tr">
                                 <img src="/Monlabo/public/images/eye-open.png" alt="">
@@ -144,16 +153,15 @@
                       </tr>
 
                       <tr>
-                        <td data-title="PRENOM">
+                        <td data-title="Matriculation">
                             <div class="mb-1">
                                 <div class="br-checkbox">
-                                  <input id="checkbox-03" name="checkbox-03" type="checkbox" aria-label="Jeramy" data-child="check-01">
-                                  <label for="checkbox-03">Jeramy</label>
+                                  <input id="checkbox-03" name="checkbox-03" type="checkbox" aria-label="8021358" data-child="check-01">
+                                  <label for="checkbox-03">8021358</label>
                                 </div>
                             </div>
                         </td>
-                        <td data-title="Nom">Bogisich</td>
-                        <td data-title="TELEPHONE">572-767-1901</td>
+                        <td data-title="Transmission">Automatique</td>
                         <td data-title="Action" style="white-space: nowrap;" class="text-right">
                             <a href="" class="icon-action-tr">
                                 <img src="/Monlabo/public/images/eye-open.png" alt="">
@@ -165,16 +173,15 @@
                       </tr>
 
                       <tr>
-                        <td data-title="PRENOM">
+                        <td data-title="Matriculation">
                             <div class="mb-1">
                                 <div class="br-checkbox">
-                                  <input id="checkbox-04" name="checkbox-04" type="checkbox" aria-label="Jasen" data-child="check-01">
-                                  <label for="checkbox-04">Jasen</label>
+                                  <input id="checkbox-04" name="checkbox-04" type="checkbox" aria-label="8021358" data-child="check-01">
+                                  <label for="checkbox-04">8021358</label>
                                 </div>
                             </div>
                         </td>
-                        <td data-title="NOM">Lebsack</td>
-                        <td data-title="TELEPHONE">889-882-5777</td>
+                        <td data-title="Transmission">Automatique</td>
 
                         <td data-title="Action" style="white-space: nowrap;" class="text-right">
                             <a href="" class="icon-action-tr">
@@ -187,38 +194,15 @@
                       </tr>
 
                       <tr>
-                        <td data-title="PRENOM">
+                        <td data-title="Matriculation">
                             <div class="mb-1">
                                 <div class="br-checkbox">
-                                  <input id="checkbox-05" name="checkbox-05" type="checkbox" aria-label="Jasen" data-child="check-01">
-                                  <label for="checkbox-05">Jasen</label>
+                                  <input id="checkbox-05" name="checkbox-05" type="checkbox" aria-label="1682885" data-child="check-01">
+                                  <label for="checkbox-05">1682885</label>
                                 </div>
                             </div>
                         </td>
-                        <td data-title="NOM">Lebsack</td>
-                        <td data-title="TELEPHONE">889-882-5777</td>
-
-                        <td data-title="Action" style="white-space: nowrap;" class="text-right">
-                            <a href="" class="icon-action-tr">
-                                <img src="/Monlabo/public/images/eye-open.png" alt="">
-                            </a>
-                            <a href="/Monlabo/gerant/modifiermoniteur.html" class="icon-action-tr">
-                                <img src="/Monlabo/public/images/icon-edit.png" alt="">
-                            </a>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td data-title="PRENOM">
-                            <div class="mb-1">
-                                <div class="br-checkbox">
-                                  <input id="checkbox-06" name="checkbox-06" type="checkbox" aria-label="Jasen" data-child="check-01">
-                                  <label for="checkbox-06">Jasen</label>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-title="NOM">Lebsack</td>
-                        <td data-title="TELEPHONE">889-882-5777</td>
+                        <td data-title="Transmission">Manuelle</td>
 
                         <td data-title="Action" style="white-space: nowrap;" class="text-right">
                             <a href="" class="icon-action-tr">
@@ -231,16 +215,15 @@
                       </tr>
 
                       <tr>
-                        <td data-title="PRENOM">
+                        <td data-title="Matriculation">
                             <div class="mb-1">
                                 <div class="br-checkbox">
-                                  <input id="checkbox-07" name="checkbox-07" type="checkbox" aria-label="Jasen" data-child="check-01">
-                                  <label for="checkbox-07">Jasen</label>
+                                  <input id="checkbox-06" name="checkbox-06" type="checkbox" aria-label="1682885" data-child="check-01">
+                                  <label for="checkbox-06">1682885</label>
                                 </div>
                             </div>
                         </td>
-                        <td data-title="NOM">Lebsack</td>
-                        <td data-title="TELEPHONE">889-882-5777</td>
+                        <td data-title="Transmission">Manuelle</td>
 
                         <td data-title="Action" style="white-space: nowrap;" class="text-right">
                             <a href="" class="icon-action-tr">
@@ -253,16 +236,36 @@
                       </tr>
 
                       <tr>
-                        <td data-title="PRENOM">
+                        <td data-title="Matriculation">
                             <div class="mb-1">
                                 <div class="br-checkbox">
-                                  <input id="checkbox-08" name="checkbox-08" type="checkbox" aria-label="Jasen" data-child="check-01">
-                                  <label for="checkbox-08">Jasen</label>
+                                  <input id="checkbox-07" name="checkbox-07" type="checkbox" aria-label="1682885" data-child="check-01">
+                                  <label for="checkbox-07">1682885</label>
                                 </div>
                             </div>
                         </td>
-                        <td data-title="NOM">Lebsack</td>
-                        <td data-title="TELEPHONE">889-882-5777</td>
+                        <td data-title="Transmission">Manuelle</td>
+
+                        <td data-title="Action" style="white-space: nowrap;" class="text-right">
+                            <a href="" class="icon-action-tr">
+                                <img src="/Monlabo/public/images/eye-open.png" alt="">
+                            </a>
+                            <a href="/Monlabo/gerant/modifiermoniteur.html" class="icon-action-tr">
+                                <img src="/Monlabo/public/images/icon-edit.png" alt="">
+                            </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td data-title="Matriculation">
+                            <div class="mb-1">
+                                <div class="br-checkbox">
+                                  <input id="checkbox-08" name="checkbox-08" type="checkbox" aria-label="1682885" data-child="check-01">
+                                  <label for="checkbox-08">1682885</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-title="Transmission">Manuelle</td>
 
                         <td data-title="Action" style="white-space: nowrap;" class="text-right">
                             <a href="" class="icon-action-tr">
@@ -354,8 +357,8 @@
 
     
     <script>
-        $('.link-item-dash').eq(1).addClass('activeItem');
-        $('.add-new-content').eq(0).show();
+        $('.link-item-dash').eq(2).addClass('activeItem');
+        $('.add-new-content').eq(1).show();
     </script>
 </body>
 </html>

@@ -5,4 +5,5 @@ Pour Exécuter les différentes vues sur votre terminal Procédez comme suit:
 4. Et en fin entrez l'url http://localhost/Monlabo dans votre navigateur
 
 NB:
-1. Connexion aux tableaux de bord [username: votre email, pass: abc]
+1. Connexion aux tableaux de bord [username: gerant, pass: ]
+2. Si vous avez reçu ce fichier sur un support amobile, déposez le à la racine de votre serveur apache. et continuer à l'étape 3 et 4.
