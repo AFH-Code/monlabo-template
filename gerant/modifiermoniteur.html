@@ -34,8 +34,8 @@
                 <div class="navocm">
                     <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
                     <label for="nav__checkbox" class="nav__toggle">
-                        <img src="https://img.icons8.com/material-outlined/30/000000/menu--v1.png" class="hamburger" />
-                        <img src="https://img.icons8.com/plumpy/30/000000/x.png" class="close" />
+                        <img src="/Monlabo/public/images/menu--v1.png" class="hamburger" />
+                        <img src="/Monlabo/public/images/x.png" class="close" />
                     </label>
                     
                     <ul class="nav__menu2" style="padding-left: 0px;">
@@ -56,26 +56,30 @@
                         </div>
                         </li>
                         <li>
-                            <a href="#!" class="newpost-opt">
-                                Aperçu
-                                <img src="/Orange/public/images/eye-o.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!" class="newpost-opt">
-                                Enregistrer
-                                <img src="/Orange/public/images/save-content.png" alt="">
-                            </a>
-                        </li>
-                        <li>
                             <a href="/Orange/dashboard/profiluser/annuaire.html" class="btn-principal" style="color: #fff!important; min-width: 100%;">
-                                Publier
+                                Enregistrer la mise à jour
                             </a>
+                        </li>
+                        <li>
+                            <div class="btn-group dropdown-prfl" role="group">
+                                <a href="javascript::void(0)" id="btnGroupDrop1">
+                                    <span class="bi bi-translate"></span> Fr
+                                </a>
+                                <div class="dropdown-content-prfl" style="right: 0px;">
+                                    <a href="javascript::void(0)" class="dropdown-item">
+                                        Français
+                                    </a>
+                                    <a href="javascript::void(0)" class="dropdown-item open-confirm-modal">
+                                        Anglais
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
+        </form>
 
         <div style="background: #F4FEFB; min-height: calc(100vh - 70px); padding-top: 90px;">
             <div class="container">
@@ -252,7 +256,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="btn-group dropdown-prfl" role="group" style="float: right;">
-                                    <a href="javascript::void(0)" id="btnGroupDrop1" class="btn cta-dash-btn" style="line-height: 25px;">
+                                    <a href="/Monlabo/gerant/newdate.html" id="btnGroupDrop1" class="btn cta-dash-btn" style="line-height: 25px;">
                                         <img src="/Monlabo/public/images/icon-add.png" alt="" style="margin-right: 5px;">
                                         Ajouter
                                     </a>
@@ -334,7 +338,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="btn-group dropdown-prfl" role="group" style="float: right;">
-                                    <a href="javascript::void(0)" id="btnGroupDrop1" class="btn cta-dash-btn" style="line-height: 25px;">
+                                    <a href="/Monlabo/gerant/newabsence.html" id="btnGroupDrop1" class="btn cta-dash-btn" style="line-height: 25px;">
                                         <img src="/Monlabo/public/images/icon-add.png" alt="" style="margin-right: 5px;">
                                         Ajouter
                                     </a>
@@ -380,8 +384,6 @@
                                 </a>
                             </td>
                           </tr>
-    
-    
                          </tbody>
                         </table>
                         </div>
@@ -391,7 +393,7 @@
 
             </div>
         </div>
-        </form>
+        
         <!--**********************************
             Footer start
         ***********************************-->
