@@ -2582,3 +2582,66 @@ input[type="radio"]:checked {
   background-color: #FF7900;
   box-shadow: inset 0 0 0 5px #ffffff;
 }
+
+.card-paiement{
+  box-shadow: 0px 0px 10px 0px #BAE0FF;
+  height: 174px;
+  border-radius: 5px;
+  border: 1px;
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 5px;
+}
+.card-paiement h3{
+  line-height: 25px; margin: 0px; font-size: 31px; font-weight: 700;
+}
+.gray-title{
+  font-family: HurmeGeometricSans1;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #858891;
+}
+
+.alertocm{
+  min-width: 66px;
+  height: 22px; padding: 3px 5px; border-radius: 50px;
+}
+.alertocm span{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; display: inline-block;
+}
+
+.alertocm-success{
+  background: #AEFFC5;
+  color: #1AB846;
+}
+.alertocm-success span{
+  background: #1AB846;
+}
+
+.alertocm-warning{
+  background: #FEECCF;
+  color: #FF7900;
+}
+.alertocm-warning span{
+  background: #FF7900;
+}
+.alertocm-danger{
+  background: #FECED2;;
+  color: #FC3E4D;
+}
+.alertocm-danger span{
+  background: #FC3E4D;
+}
+
+.alertocm-pending{
+  background: #D6E5FA;
+  color: #6040FF;
+}
+.alertocm-pending span{
+  background: #6040FF;
+}
